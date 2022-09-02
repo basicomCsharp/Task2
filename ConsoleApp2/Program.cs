@@ -17,8 +17,8 @@ namespace Task2
             sDir = Console.ReadLine();
 
             CalcDir classCalcDir = new CalcDir();
-            classCalcDir.GetSizeDirAndCountFiles(sDir);            
-            Console.WriteLine("Каталог {0} содержит {1} файлов общий объём которых равен в байтах : {2}", sDir, classCalcDir.CounFile, classCalcDir.SizeDir);
+            var sizeDir = classCalcDir.GetSizeDirAndCountFiles(sDir);            
+            Console.WriteLine("Каталог {0} содержит {1} файлов общий объём которых равен в байтах : {2}", sDir, classCalcDir.CounFile, sizeDir);
             Console.ReadKey();
         }
     }
